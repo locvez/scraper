@@ -260,7 +260,7 @@ func CrawlROMs(gl *rom.GameListXML, sources []ds.DS, xmlOpts *rom.XMLOpts, gameO
 			continue
 		}
 		if *mame {
-			if r.Ext == ".zip" || r.Ext == ".7z" {
+			if r.Ext == ".zip" || r.Ext == ".7z" || r.Ext == ".iso"{
 				roms <- r
 			}
 			continue
